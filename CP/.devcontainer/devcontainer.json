@@ -1,0 +1,21 @@
+{
+    // コンテナの名前
+    "name": "cp",
+
+    // Docker Composeの設定ファイルパス
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+
+    // コンテナのサービス名
+    "service": "dev",
+
+    // VSCodeで開くコンテナ内のパス
+    "workspaceFolder": "/root/codes"
+
+    // // コンテナ内で使用する拡張機能
+    // "extensions": [
+    //     "dbaeumer.vscode-eslint",
+    //     "esbenp.prettier-vscode"
+    // ]
+}

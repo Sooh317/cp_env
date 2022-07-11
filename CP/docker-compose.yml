@@ -1,0 +1,14 @@
+version: '3'
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+
+    volumes:
+      - ./library_cpp:/root/codes/library_cpp:cached
+      - ./library_py:/root/codes/library_py:cached
+    
